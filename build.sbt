@@ -38,10 +38,10 @@ scalacOptions <++= scalaVersion map { sv =>
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
+// dependencies
+
 val akka = "2.3.11"
 val spray = "1.3.3"
-
-// dependencies
 
 libraryDependencies ++= Seq (
   // -- testing --

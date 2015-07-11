@@ -11,7 +11,7 @@ API](https://github.com/coreos/fleet/blob/master/Documentation/api-v1.md).
 
 Below is a quick start guide for using the Scala fleet client.  For more
 information, see the [comprehensive documentation for the Scala fleet
-Client](http://monsantoco.github.io/fleet-client/latest/api/#com.monsanto.arch.fleet.package).
+Client](http://monsantoco.github.io/fleet-client/).
 
 
 ```scala
