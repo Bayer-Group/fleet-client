@@ -10,7 +10,7 @@ API](https://github.com/coreos/fleet/blob/master/Documentation/api-v1.md).
 ## Usage
 
 Below is a quick start guide for using the Scala fleet client.  For more
-information, see the [comprehensive documentation for the Scala Fleet
+information, see the [comprehensive documentation for the Scala fleet
 Client](http://monsantoco.github.io/fleet-client/latest/api/#com.monsanto.arch.fleet.package).
 
 
@@ -43,4 +43,16 @@ val units = client.listUnits
 units onSuccess { case u => u.foreach(println) }
 
 system.shutdown()
+```
+
+## Testing
+
+To successfully run the tests, you must have a fleet service running on IP
+address 172.17.8.201 and listening on port 41337.  If you have Vagrant
+installed, you can simply use the included `Vagrantfile` to start up a CoreOS
+virtual machine with fleet running.
+
+```
+vagrant up
+sbt test
 ```
